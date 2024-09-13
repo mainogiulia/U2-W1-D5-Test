@@ -202,6 +202,7 @@ article {
   max-height: 200px;
   margin-bottom: 20px;
   align-items: center;
+  width: 95%;
 }
 
 .info {
@@ -209,12 +210,12 @@ article {
   margin-right: 40px;
 }
 
-.image {
+.thumbnail {
   width: 25%;
 }
 
-.image > img {
-  max-height: 140px;
+.thumbnail > img {
+  max-width: 200px;
 }
 
 .author {
@@ -322,6 +323,15 @@ aside > h5 {
     width: 100%;
     padding-bottom: 30px;
   }
+
+  .numCont {
+    position: relative;
+  }
+
+  li .read {
+    position: absolute;
+    right: 0;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -346,6 +356,10 @@ aside > h5 {
   h1 {
     font-size: 80px;
   }
+
+  .news {
+    width: 90%;
+  }
 }
 
 @media screen and (max-width: 696px) {
@@ -354,5 +368,8 @@ aside > h5 {
   }
   nav > div:not(:last-child) {
     display: none;
+  }
+  .news {
+    width: 80%;
   }
 }
